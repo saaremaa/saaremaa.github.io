@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="/calc/css/style.css">
+    <script src="/calc/js/math.min.js"></script>
+    <script src="/calc/js/calque.js"></script>
+    <script>
+        window.onload = function () {
+            var input = document.getElementById('input');
+            var output = document.getElementById('output');
+            window.calque = new Calque(input, output);
+            input.focus();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="interface">
+        <div class="output" id="output"></div>
+        <textarea class="input" id="input"></textarea>
+    </div>
+</body>
+
+</html>
